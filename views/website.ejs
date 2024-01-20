@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="website.css">
+    <script src="website.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="bar">
+            <ul>
+               <a href="http://localhost:3000/"><li class="li">HOME</li></a>
+               <a href=""> <li class="li">ABOUT</li></a>
+               <a href=""><li class="li">CONTACT</li></a> 
+               
+                
+            </ul>
+        </div>
+        <div class="header">
+        <div>
+        <div class="logo">
+            <img src="images_for_posts/logo.jpg" alt="logo">
+        </div>
+        <div class="search">
+            <form action="">
+           <input type="search" name="search" id="search">
+           <button class="fa fa-search" type="submit"></i></button>
+        </form>
+        </div></div>
+    </div>
+    </header>   
+    <div class="">
+    <div class="menu">
+        <ul>
+        <a href="/"><li>Home</li></a>
+        <a href="/technology"><li>Technolgy</li></a>
+        <a href="/food"><li>Food</li></a>
+        <a href="/beauty"><li >Beauty</li></a>
+        <a href="/entertainment"><li>Entertainment</li></a>
+        </ul>
+    </div>
+    <div class="body">
+    <!--this is for body of the website-->
+    <div style="display: flex;">
+    <div class="main_body">
+        <h2>Recent</h2>
+        <hr class="underline">
+        <div class="recent">
+        
+            <% for (let i = posts.length - 1; i >= Math.max(posts.length - 4, 0); i--) { %>
+                <a href="/post/<%= posts[i].id %>">
+                        <div class="recent_posts">
+                            <img src="data:image/*;base64,<%= posts[i].image.toString('base64') %>" alt="">
+                            <div class="post_text">
+                                <h3><%= posts[i].title %></h3>
+                            </div>
+                        </div>
+                    </a>
+                <% } %>
+            
+    </div>
+    </div>
+   
+
+    <hr id="hr1">
+    <div> <!--divide with main and socila media-->
+<!--this is for social media-->
+    <div class="social_media">
+        <h2>Socail Media</h2>
+        <hr class="underline">
+        <div class="slayout">
+            <a href="">
+        <div class="social_links" style="background-color: #007bb5; color: white;">Linkdin   <li class="fa fa-linkedin"></li></div></a>
+        <a href=""><div class="social_links " style="background-color: #bb0000; color: white;">Youtube  <li class="fa fa-youtube"></li></div></a>
+        <a href=""><div class="social_links" style="background-color: #3B5998;color:white ;">Facebook   <li class="fa fa-facebook"></li></div></a>
+       <a href=""><div class="social_links" style="background-color: #55ACEE; color: white;">Twetter   <li class="fa fa-twitter"></li></div></a> 
+    </div>
+    </div>
+    <div class="cat">
+    <h2 style="margin-top:30px;">Category</h2>
+    <hr class="underline">
+    <div class="tags">
+    <ul>
+    <a href="/food"><li>Food</li></a>
+    <a href="/technology"><li>Technology</li></a>
+    <a href="/entertainment"> <li>Entertainment</li> </a>
+    <a href="beauty"><li>Beauty</li></a>
+    <a href="health"><li>Health</li></a>
+
+    </ul>
+
+    </div>
+    </div>
+</div>
+</div> 
+
+
+<!--for popular posts
+<hr style="height: 10px; border-radius: 50%; margin:30px 0;background-color: green;">
+-->
+
+<div class="">
+    <h2>Popular</h2>
+    <hr class="underline">
+    <div class="popular">
+        <% posts.forEach(document => { %>
+            <a href="/post/<%= document.id %>"><div class="popular_post"><img src="data:image/*;base64,<%= document.image.toString('base64') %>" alt=""><div class=""><h3><%= document.title %></h3></div></div></a>
+           
+            <% }); %>
+    </div> 
+</div>
+</div>
+
+
+</div>
+<a href="http://localhost:3000/editor"><button id="pbutton">Add Post</button></a>
+    <footer><div class="footer">
+        <div style="display: flex; width: 75%;">
+        <div id="profile">
+            <img src="images_for_posts/profile.jpg" alt="">
+
+        </div>
+        <div id="name">
+            <h2>Seela Durga Surya Prasad</h2>
+            <h3>Software Engineeer</h3>
+            <h4>I am Software Engineeer and I am creating <br> the websites
+            developing the Softwares</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="catagories">
+        <h2 style="color: white;">Tags</h2>
+        <hr style="background-color: white; margin: 20px;">
+        <div class="ele_box">
+        <div class="ele">Biriyani</div>
+        <div class="ele">Python</div>
+        <div class="ele">Communication</div>
+        <div class="ele">Recent</div>
+        <div class="ele">Mutton Reciepe</div>
+        <div class="ele">Best Comedy movies</div>
+    </div>
+</div>
+
+
+</div>
+<h4 style="text-align: center; color: white;">all @copy rights reserved</h4>
+</footer>
+</body>
+</html>

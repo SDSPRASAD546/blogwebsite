@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-color: #ececec;
+    margin:20px ;
+    padding: 2%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    list-style: circle;
+    justify-content: space-evenly;
+   
+    
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img
+{
+  width: 500px;
+  height: 200px; 
+  
+}
+.search input{
+    height: 50px;
+    margin: 40px 0px ;
+    width: 100%;
+    border: none;
+    border:2px solid green;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.search{
+    display: flex;
+}
+.search button{
+    height: 50px;
+    margin:40px 0;
+    width: 100px;
+    border:none;
+    border:2px solid green ;
+    background-color: green;
+    color: white;
+
+}
+.search button:hover{
+    background-color: darkgreen;
+}
+.search input:focus{
+    outline: none;
+}
+.search form{
+    display: flex;
+    margin: 0;
+    width: 100%;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+}
+.li{
+    border-right: 5px solid black;
+    height: 40%;
+    
+    padding: 15px;
+    text-align: center;
+    width: 60px;
+    transform: skewx(20deg);
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    overflow: hidden;
+}
+.bar{
+    margin: 0;
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    
+}
+header ul a{
+    text-decoration: none;
+    color: black;
+}
+.menu{
+    height: 50px;
+    width: 100%;
+    border: 2px solid orange;
+    box-shadow: 3px 3px 10px orange;
+}
+.menu ul a{
+text-decoration: none;
+color: black;
+}
+.menu ul li{
+    text-align: center;
+    padding-top: 10px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: larger;
+height: 40px;
+width: 150px;
+    
+}
+.menu ul li:hover{
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: larger;
+background-color:orangered ;
+cursor: pointer;
+}
+.menu ul a li:hover{
+    margin: 0;
+}
+
+.main_body{
+    border: 1px slid black;
+    width: 60%;
+    height: auto;
+    border-radius:10px 10px 10px 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: white;
+    padding: 1%;
+    
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+#hr1{
+    
+  margin:2% 2% 9% 2%  
+}
+.underline{
+    margin-right:20% ;
+    height: 3px;
+    background-color: green;
+    border-radius:0 50% 50% 0;
+    margin-bottom: 40px;
+    margin-left:20px;
+
+}
+.recent{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    flex-wrap: wrap;
+    gap:40px;
+    margin:40px 0 0 40px;
+}
+.social_media{
+    margin-top: 30px;
+    background-color: white;
+    width: 400px;
+    border-radius:10px;
+    height: 300px;
+    padding: 2%;
+   
+}
+.recent_posts img{ 
+    width: 350px;
+    height: 300px;    
+    border-radius: 5px;
+}
+.recent_posts img:hover{
+    width: 380px;
+    height: 320px;    
+    border-radius: 5px;
+    position: absolute;
+    
+}
+.post_text {
+    width: 350px;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+.social_links{
+    width: 150px;
+    height: 40px;
+        color: white;
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+
+}
+.slayout{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    flex-wrap: wrap;
+    gap:40px;
+    margin: 20px;    
+}
+.cat{
+    margin-top:30px ;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.tags ul{
+    list-style-type: disc;
+    display: block;
+    margin-left: 50px;
+}
+.tags ul li{
+    font-size: larger;
+    margin: 30px 0;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+}
+.tags ul li:hover{
+    font-size: larger;
+    margin: 30px 0;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    color:green ;
+}
+.popular{
+    display: flex;
+    flex-wrap:wrap;
+   
+}
+.popular_post{
+
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    margin: 30px;
+    border-top:2px solid blue;
+    padding: 2%;
+    padding: 40px 20px 0 60px;
+    
+
+}
+.popular_post:hover{
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    margin: 30px;
+    border-top:2px solid blue;
+    padding: 2%;
+    padding: 40px 20px 0 60px;
+    box-shadow: 10px 10px 40px #3b5998;
+}
+.popular_post img{ 
+    width: 250px;
+    height: 280px;    
+    border-radius: 5px;
+}
+footer{
+    background-color: black;
+
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    padding: 2%;
+    display: flex;    
+}
+#profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:2px solid white;
+    background-color: white;
+    margin-top: 40px;
+    overflow: hidden;
+}
+#profile img{
+    width: 200px;
+    height: 300px;
+}
+#name{
+    color: white;
+    margin: 50px;
+   
+}
+#name h3{
+    margin: 20px;
+ margin-left: 50px;
+}
+
+.ele{
+    color: white;
+    width: 150px;
+    height: 50px;
+    border: 2px solid green;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.ele_box{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.ele:hover{
+    color: white;
+    width: 150px;
+    height: 50px;
+    border: 2px solid green;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: green;
+}
+.selected_item{
+    background-color: orangered;
+}
+#pbutton{
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 60px;
+    margin: 20px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    position: fixed;
+    top: 600px;
+    left: 1100px;
+    
+}
+#pbutton:hover{
+    border-radius: 10px;
+    cursor: pointer;
+}

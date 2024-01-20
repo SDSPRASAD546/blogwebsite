@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="editor.css">
+    <title>Text Editor</title>
+
+</head>
+<body>
+    <div id="toolbar">
+        <button onclick="execCmd('bold')" , class = "button_pressed" >Bold</button>
+        <button onclick="execCmd('italic')" , class = "button_pressed" >Italic</button>
+        <button onclick="execCmd('insertOrderedList')" , class = "button_pressed" >Ordered List</button>
+        <button onclick="execCmd('insertUnorderedList')" , class = "button_pressed" >Unordered List</button>
+        <button onclick="insertImage()">Insert Image</button>
+    </div>
+    <form action="http://localhost:3000/blog" method="post" enctype="multipart/form-data">
+    <input type="text" placeholder="TItle" style="height: 40px; margin: 20px 40px 10px 60px; width: 90%; border-radius: 10px; padding: 2%;" name="title">
+    <input type="text" id="cat" name="cat" placeholder="Category">
+    <div id="editor" contenteditable="true" >
+
+    </div>
+    <input type="file" id="imageInput" style="display:none;" accept="image/*" name="image">
+    <input type="submit" name="" id="" value="submit" style="height: 50px; width: 
+100px; background-color: green; display: flex; justify-content: center;">
+</form>
+    <script src="website.js"></script>
+    
+
+</body>
+</html>

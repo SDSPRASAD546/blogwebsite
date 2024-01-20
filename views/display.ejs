@@ -1,0 +1,16 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts</title>
+    <link rel="stylesheet" href="/styles/display.css">
+</head>
+<body>
+   <h1> <%= blog_details.title %> </h1>
+   <hr>
+   <img src="data:image/*;base64,<%= blog_details.image.toString('base64') %>" alt="">
+   <p><%= blog_details.content %></p>
+</body>
+</html>
