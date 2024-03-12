@@ -42,8 +42,8 @@ ul{
 .search{
     display: flex;
 }
-.search button{
-    height: 50px;
+.search input[type=submit]{
+    height: 53px;
     margin:40px 0;
     width: 100px;
     border:none;

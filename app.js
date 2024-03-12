@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 // Connect to MongoDB using mongoose
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb://localhost:27017/UserData', {
+    await mongoose.connect('mongodb+srv://surya:VrjcRBHvoMpp4amB@cluster0.taybcas.mongodb.net/', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
@@ -81,6 +81,18 @@ catch(err){
 
 }
 
+});
+
+app.post('/search', async (req, res) => {
+  try {
+    console.log('entered ');
+    const { search } = req.body; // Ensure the form field is named 'cat'
+    const data = await blog.find({ cat: search }); // Search for documents with matching category
+    res.render('foodblogs', { blogs: data }); // Render the view with the search results
+  } catch (err) {
+    console.error("Search Error", err);
+    res.status(500).json({ error: 'Internal server error occurred during search' });
+  }
 });
 
 
