@@ -3,8 +3,11 @@ const multer = require('multer');
 const mongoose = require('mongoose');
 const app = express();
 const path = require('path');
-const port = 3000;
+require('dotenv').config();
 
+// Now you can access your variables like this
+const port = process.env.POR0T || 3000;
+console.log(process.env);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
