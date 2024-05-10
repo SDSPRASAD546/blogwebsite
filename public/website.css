@@ -42,8 +42,8 @@ ul{
 .search{
     display: flex;
 }
-.search input[type=submit]{
-    height: 53px;
+.search button{
+    height: 50px;
     margin:40px 0;
     width: 100px;
     border:none;
@@ -57,11 +57,6 @@ ul{
 }
 .search input:focus{
     outline: none;
-}
-.search form{
-    display: flex;
-    margin: 0;
-    width: 100%;
 }
 header ul{
     list-style-type: none;
@@ -99,10 +94,6 @@ header ul a{
     border: 2px solid orange;
     box-shadow: 3px 3px 10px orange;
 }
-.menu ul a{
-text-decoration: none;
-color: black;
-}
 .menu ul li{
     text-align: center;
     padding-top: 10px;
@@ -122,8 +113,8 @@ font-size: larger;
 background-color:orangered ;
 cursor: pointer;
 }
-.menu ul a li:hover{
-    margin: 0;
+.menu ul li a:hover{
+    margin: 20px;
 }
 
 .main_body{
@@ -343,9 +334,7 @@ footer{
     border: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
-    position: fixed;
-    top: 600px;
-    left: 1100px;
+    
     
 }
 #pbutton:hover{
