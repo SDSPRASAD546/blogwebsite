@@ -334,9 +334,7 @@ footer{
     border: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
-    position: fixed;
-    top: 600px;
-    left: 1100px;
+    
     
 }
 #pbutton:hover{
