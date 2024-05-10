@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wh-360</title>
+    <title>Document</title>
 
     <link rel="stylesheet" href="website.css">
     <script src="website.js"></script>
@@ -16,7 +16,7 @@
     <header>
         <div class="bar">
             <ul>
-               <a href="https://wh-360.onrender.com/"><li class="li">HOME</li></a>
+               <a href="http://localhost:3000/"><li class="li">HOME</li></a>
                <a href=""> <li class="li">ABOUT</li></a>
                <a href=""><li class="li">CONTACT</li></a> 
                
@@ -29,10 +29,12 @@
             <img src="images_for_posts/logo.jpg" alt="logo">
         </div>
         <div class="search">
-            <form action="https://wh-360.onrender.com/search" method="post">
+            <form action="http://localhost:3000/search" method="post">
                 <input type="text" name="search" id="search">
                 <input class="fa fa-sarch" type="submit"></i>
              </form>
+             <a href="http://localhost:3000/editor"><button id="pbutton">Add Post</button></a>
+
         </div></div>
     </div>
     </header>   
@@ -40,7 +42,7 @@
     <div class="menu">
         <ul>
         <a href="/"><li>Home</li></a>
-        <a href="/technology"><li>Technology</li></a>
+        <a href="/technology"><li>Technolgy</li></a>
         <a href="/food"><li>Food</li></a>
         <a href="/beauty"><li >Beauty</li></a>
         <a href="/entertainment"><li>Entertainment</li></a>
@@ -120,37 +122,31 @@
 
 
 </div>
-<a href="https://wh-360.onrender.com/editor"><button id="pbutton">Add Post</button></a>
-    <footer><div class="footer">
-        <div style="display: flex; width: 75%;">
-        <div id="profile">
-            <img src="images_for_posts/profile.jpg" alt="">
-
+<footer>
+    <div class="footer-content">
+        <div>
+            <img src="images_for_posts/profile.jpg" alt="" id="profile">
+            <div id="name">
+                <h2>Seela Durga Surya Prasad</h2>
+                <h3>Software Engineer</h3>
+                <h4>I am a Software Engineer creating websites and developing software.</h4>
+            </div>
         </div>
-        <div id="name">
-            <h2>Seela Durga Surya Prasad</h2>
-            <h3>Software Engineeer</h3>
-            <h4>I am Software Engineeer and I am creating <br> the websites
-            developing the Softwares</h4>
+        <div class="catagories">
+            <h2>Tags</h2>
+            <div class="ele_box">
+                <div class="ele">Biriyani</div>
+                <div class="ele">Python</div>
+                <div class="ele">Communication</div>
+                <div class="ele">Recent</div>
+                <div class="ele">Mutton Recipe</div>
+                <div class="ele">Best Comedy movies</div>
+            </div>
         </div>
     </div>
-    <hr>
-    <div class="catagories">
-        <h2 style="color: white;">Tags</h2>
-        <hr style="background-color: white; margin: 20px;">
-        <div class="ele_box">
-        <div class="ele">Biriyani</div>
-        <div class="ele">Python</div>
-        <div class="ele">Communication</div>
-        <div class="ele">Recent</div>
-        <div class="ele">Mutton Reciepe</div>
-        <div class="ele">Best Comedy movies</div>
+    <div class="footer-content">
+        <h4>All rights reserved</h4>
     </div>
-</div>
-
-
-</div>
-<h4 style="text-align: center; color: white;">all @copy rights reserved</h4>
 </footer>
 </body>
 </html>
